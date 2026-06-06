@@ -6,6 +6,7 @@ from loguru import logger
 from core.config import settings
 from app import models
 from core.session import init_db
+from app.routers import webhook
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -32,6 +33,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(webhook.router)
 
 @app.get("/")
 async def root():

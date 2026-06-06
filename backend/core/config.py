@@ -13,8 +13,8 @@ class Settings(BaseSettings):
     )
 
     PORT: int = Field(default=8000)
-    DATABASE_URL_DEV: str = Field(...)
-    DATABASE_URL_PROD: str = Field(...)
+    DATABASE_URL: str = Field(...)
+    # DATABASE_URL_PROD: str = Field(...)
     ALLOWED_ORIGINS: str = Field(
          default="http://localhost:3000,http://localhost:5173,https://"
     )
