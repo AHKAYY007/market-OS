@@ -12,7 +12,7 @@ from app.routers import webhook
 async def lifespan(app: FastAPI):
     """Async contextmanager"""
     logger.info("Application starting....")
-    await init_db()
+    # await init_db()
     logger.info("Database sync succesful....")
     yield
     logger.info("Application shutting down....")
