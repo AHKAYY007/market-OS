@@ -22,5 +22,5 @@ class Inventory(SQLModel, table=True):
     bought_at: float = Field(...)
     sold_at: float = Field(...)
     stock_available: StockAvailability = Field(default=StockAvailability.INSTOCK)
-    updated_at: datetime = Field(default_factory=datetime.now(UTC).isoformat)
+    updated_at: datetime = Field(default_factory=datetime.now(UTC))
     
