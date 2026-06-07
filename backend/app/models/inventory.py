@@ -1,6 +1,6 @@
 from sqlmodel import SQLModel, Field
 from uuid import uuid4, UUID
-from datetime import datetime, UTC
+from datetime import datetime
 from enum import StrEnum
 
 class StockAvailability(StrEnum):
@@ -22,5 +22,5 @@ class Inventory(SQLModel, table=True):
     bought_at: float = Field(...)
     sold_at: float = Field(...)
     stock_available: StockAvailability = Field(default=StockAvailability.INSTOCK)
-    updated_at: datetime = Field(default_factory=datetime.now(UTC))
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
     

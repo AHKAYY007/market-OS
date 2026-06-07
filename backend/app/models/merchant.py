@@ -1,6 +1,6 @@
 from sqlmodel import SQLModel, Field
 from uuid import uuid4, UUID
-from datetime import datetime, timezone
+from datetime import datetime
 from typing import Optional
 from enum import StrEnum
 
@@ -19,4 +19,4 @@ class Merchant(SQLModel, table=True):
     whatsapp_no: str = Field(..., unique=True, index=True)
     business_name: Optional[str] = Field(...)
     onboarding_stage: OnboardingStage = Field(default=OnboardingStage.BUSINESS_NAME)
-    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    created_at: datetime = Field(default_factory=datetime.utcnow)
