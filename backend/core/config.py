@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     ALLOWED_ORIGINS: str = Field(
          default="http://localhost:3000,http://localhost:5173,https://"
     )
+    WASENDER_API_KEY: str = Field(...)
 
 
     @field_validator("ALLOWED_ORIGINS")
