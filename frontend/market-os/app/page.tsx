@@ -6,28 +6,28 @@ import HologramLines from './components/HologramLines';
 
 const FEATURES = [
   {
-    label: 'Instant Signals',
-    desc:  'Real-time buy and sell alerts delivered to your WhatsApp the moment the market moves.',
+    label: 'Instant Alerts',
+    desc:  'Get WhatApp alerts the moment prices change. Stay ahead without stress.',
   },
   {
-    label: 'Auto-Execution',
-    desc:  'Set triggers and let Market OS trade on your behalf. Work less, earn more.',
+    label: 'Smart Trading',
+    desc:  'Set simple rules and let Market OS trade for you.',
   },
   {
-    label: 'Portfolio Tracking',
-    desc:  'Check your P&L, holdings, and performance with a single message anytime.',
+    label: 'Easy Tracking',
+    desc:  'Check your profits and stock anytime with one quick message.',
   },
   {
-    label: 'Multi-Exchange',
-    desc:  'One chat interface connected to all major exchanges. No switching, no logins.',
+    label: 'One Chat Access',
+    desc:  'Use one WhatApp chat for all your trading. No switching apps, no extra logins needed.',
   },
 ];
 
 const STATS = [
-  { value: '12,000+', label: 'Active Traders' },
-  { value: '98M+',    label: 'Signals Sent'   },
-  { value: '99.9%',   label: 'Uptime'          },
-  { value: '$2.4B+',  label: 'Volume Tracked'  },
+  { value: '12,000+', label: 'Community Traders' },
+  { value: '98M+',    label: 'Messages Delivered' },
+  { value: '99.9%',   label: 'Reliable Service' },
+  { value: '$2.4B+',  label: 'Trade Volume' },
 ];
 
 export default function Home() {
@@ -89,8 +89,9 @@ export default function Home() {
                     animationDelay: '0.24s',
                   }}
                 >
-                  Market OS delivers real-time signals, automated execution,
-                  and portfolio tracking directly inside WhatsApp.
+                  Market OS helps traders buy, sell,
+                  and track their business directly inside WhatsApp.
+                  Simple, fast and built for everyday people.
                   No dashboards. No extra apps. Just your chat.
                 </p>
 
