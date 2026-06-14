@@ -8,35 +8,31 @@ const PLANS = [
     name:     'STARTER',
     price:    '0',
     period:   'month',
-    tagline:  'Everything you need to begin trading through WhatsApp.',
+    tagline:  'Everything you need to manage your business through WhatsApp.',
     badge:    undefined,
     featured: false,
     cta:      'Get Started',
     features: [
       '1 connected WhatsApp number',
-      '20 trade alerts per day',
-      'Basic market signals',
-      '5 active watchlists',
-      'Manual trade execution',
+      'Up to 200 transactions/month',
+      'Basic inventory tracking',
+      'Manual transaction verification',
       'Community support',
     ],
   },
   {
-    name:     'TRADER',
+    name:     'GROWTH',
     price:    '49',
     period:   'month',
-    tagline:  'Advanced tools for traders who move with the market.',
+    tagline:  'Tools to scale operations and get real business insights.',
     badge:    'MOST POPULAR',
     featured: true,
-    cta:      'Start Trading',
+    cta:      'Start Now',
     features: [
       '3 connected WhatsApp numbers',
-      'Unlimited trade alerts',
-      'Advanced market signals',
-      'Unlimited watchlists',
-      'Portfolio performance tracker',
-      'Auto-execution on triggers',
-      'REST API access',
+      'Unlimited transactions',
+      'Automated data extraction from images and voice notes',
+      'Business performance reports',
       'Priority support',
     ],
   },
@@ -44,19 +40,16 @@ const PLANS = [
     name:     'ENTERPRISE',
     price:    null,
     period:   'month',
-    tagline:  'Custom infrastructure for institutions and trading desks.',
+    tagline:  'Custom solutions for larger merchants and partners.',
     badge:    undefined,
     featured: false,
     cta:      'Contact Sales',
     features: [
       'Unlimited WhatsApp numbers',
-      'Unlimited everything',
-      'AI-powered signal engine',
-      'Custom alert rule builder',
-      'Team roles and collaboration',
-      'Dedicated account manager',
+      'Dedicated onboarding',
       'Custom integrations and webhooks',
       'SLA-backed uptime guarantee',
+      'Dedicated account manager',
     ],
   },
 ];
@@ -119,8 +112,7 @@ export default function PricingPage() {
                 animationDelay: '0.2s',
               }}
             >
-              No hidden fees. No lock-ins. Pick the plan that fits your trading volume
-              and scale up any time.
+              No hidden fees. No lock-ins. Pick the plan that fits your business size and scale up any time.
             </p>
           </div>
 

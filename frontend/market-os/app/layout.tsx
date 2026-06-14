@@ -9,7 +9,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Market OS",
-  description: "Trade digital assets in a pixel-perfect future.",
+  description: "AI-powered business OS enabling African merchants to manage inventory, sales, expenses and performance directly through WhatsApp.",
 };
 
 export default function RootLayout({

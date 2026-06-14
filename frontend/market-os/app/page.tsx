@@ -6,28 +6,28 @@ import HologramLines from './components/HologramLines';
 
 const FEATURES = [
   {
-    label: 'Instant Signals',
-    desc:  'Real-time buy and sell alerts delivered to your WhatsApp the moment the market moves.',
+    label: 'Inventory Management',
+    desc: 'Update stock using text, voice or images; auto-extract handwritten records.',
   },
   {
-    label: 'Auto-Execution',
-    desc:  'Set triggers and let Market OS trade on your behalf. Work less, earn more.',
+    label: 'Sales & Expenses',
+    desc: 'Record transactions automatically from chat conversations.',
   },
   {
-    label: 'Portfolio Tracking',
-    desc:  'Check your P&L, holdings, and performance with a single message anytime.',
+    label: 'Real-time Tracking',
+    desc: 'Live stock and sales tracking with low-friction updates.',
   },
   {
-    label: 'Multi-Exchange',
-    desc:  'One chat interface connected to all major exchanges. No switching, no logins.',
+    label: 'Business Insights',
+    desc: 'AI-generated profit/loss and performance insights delivered in chat.',
   },
 ];
 
 const STATS = [
-  { value: '12,000+', label: 'Active Traders' },
-  { value: '98M+',    label: 'Signals Sent'   },
-  { value: '99.9%',   label: 'Uptime'          },
-  { value: '$2.4B+',  label: 'Volume Tracked'  },
+  { value: '12,000+', label: 'Active Merchants' },
+  { value: '98M+',    label: 'Interactions Processed' },
+  { value: '99.9%',   label: 'Uptime' },
+  { value: '$2.4B+',  label: 'Transactions Recorded' },
 ];
 
 export default function Home() {
@@ -60,7 +60,7 @@ export default function Home() {
                   }}
                 >
                   <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--green)', display: 'inline-block' }} />
-                  WhatsApp Trading Platform
+                  WhatsApp Business OS
                 </span>
 
                 <h1
@@ -76,8 +76,8 @@ export default function Home() {
                     animationDelay: '0.14s',
                   }}
                 >
-                  TRADE THE<br />
-                  <span style={{ color: 'var(--green)' }}>MARKET.</span><br />
+                  MANAGE YOUR<br />
+                  <span style={{ color: 'var(--green)' }}>BUSINESS.</span><br />
                   IN YOUR CHAT.
                 </h1>
 
@@ -89,9 +89,7 @@ export default function Home() {
                     animationDelay: '0.24s',
                   }}
                 >
-                  Market OS delivers real-time signals, automated execution,
-                  and portfolio tracking directly inside WhatsApp.
-                  No dashboards. No extra apps. Just your chat.
+                  MarketOS lets small businesses update inventory, record sales and expenses, and get actionable insights via natural language, voice notes or images — all in WhatsApp. No new apps or training required.
                 </p>
 
                 <div
@@ -125,7 +123,7 @@ export default function Home() {
                       transition: 'background .2s',
                     }}
                   >
-                    View Pricing
+                    Learn How It Works
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
                       <path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
@@ -224,7 +222,7 @@ export default function Home() {
             className="animate-fade-in-up"
             style={{ fontFamily: 'var(--font-orbitron)', fontSize: 'clamp(1.8rem, 3.8vw, 3rem)', fontWeight: 900, color: '#fff', maxWidth: 520, margin: '0 auto 40px', lineHeight: 1.06, animationDelay: '0.1s' }}
           >
-            START TRADING THROUGH WHATSAPP TODAY.
+            MANAGE YOUR BUSINESS THROUGH WHATSAPP TODAY.
           </h2>
           <Link
             href="/pricing"

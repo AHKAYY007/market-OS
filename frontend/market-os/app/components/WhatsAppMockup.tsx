@@ -3,13 +3,11 @@
 const G = '#166534';
 
 const MESSAGES = [
-  { from: 'bot',  text: 'BTC/USD buy signal at $67,240. Executing...',  time: '09:41' },
-  { from: 'bot',  text: 'Done. 0.05 BTC purchased.',                    time: '09:41' },
-  { from: 'user', text: 'Portfolio value?',                              time: '09:42' },
-  { from: 'bot',  text: 'Total: $24,850\n+$1,240 today (+5.2%)',        time: '09:42' },
-  { from: 'bot',  text: 'SOL up 8.2% in 4h. Set take-profit?',          time: '09:43' },
-  { from: 'user', text: 'Yes, at $152',                                  time: '09:43' },
-  { from: 'bot',  text: 'Set. Monitoring.',                              time: '09:43' },
+  { from: 'bot',  text: 'Inventory updated: Rice +10 units (bought at 5,000)', time: '09:41' },
+  { from: 'user', text: 'What is my rice stock?',                          time: '09:42' },
+  { from: 'bot',  text: 'Rice: 42 units available. Reorder suggested at 20.', time: '09:42' },
+  { from: 'user', text: 'Add expense: transport 1,200',                    time: '09:43' },
+  { from: 'bot',  text: 'Expense recorded. Today expenses: 3,400.',        time: '09:43' },
 ];
 
 const phone: React.CSSProperties = {
@@ -106,7 +104,7 @@ export default function WhatsAppMockup() {
         </div>
         <div>
           <p style={{ color: '#fff', fontSize: 13, fontWeight: 600, lineHeight: 1, marginBottom: 3 }}>Market OS</p>
-          <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: 10 }}>Online · trading 24/7</p>
+          <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: 10 }}>Online · business assistant</p>
         </div>
       </div>
 
