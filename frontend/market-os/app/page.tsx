@@ -44,10 +44,10 @@ export default function Home() {
         {/* ── Hero ── */}
         <section className="hero-section" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: 64 }}>
           <div className="hero-inner" style={{ width: '100%', maxWidth: 1152, margin: '0 auto', padding: '80px 48px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 72, flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 72, flexWrap: 'wrap', justifyContent: 'center' }}>
 
               {/* Left: copy */}
-              <div style={{ flex: '1 1 320px', minWidth: 0 }}>
+              <div>
                 <span
                   className="animate-fade-in-up"
                   style={{
@@ -174,7 +174,7 @@ export default function Home() {
           <HologramLines />
           <div className="features-grid" style={{ position: 'relative', zIndex: 1, maxWidth: 1024, margin: '0 auto', padding: '0 48px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: 'rgba(22,101,52,0.14)' }}>
 
-            <div style={{ textAlign: 'center', marginBottom: 64 }}>
+            <div style={{ textAlign: 'center', marginBottom: 64, paddingTop: 40 }}>
               <p className="animate-fade-in-up" style={{ fontSize: 9, fontWeight: 700, letterSpacing: '0.5em', textTransform: 'uppercase', color: 'var(--green)', marginBottom: 20 }}>
                 Why Market OS
               </p>

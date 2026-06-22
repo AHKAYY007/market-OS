@@ -63,7 +63,7 @@ export default function PricingPage() {
         <Navbar />
 
         {/* Content — starts below fixed navbar */}
-        <div style={{ position: 'relative', maxWidth: 1100, margin: '0 auto', padding: '120px 48px 96px' }}>
+        <div className="max-w-[90%]" style={{ position: 'relative', margin: '0 auto', paddingTop: '120px' }}>
           <HologramLines />
 
           {/* Section header */}
@@ -117,20 +117,11 @@ export default function PricingPage() {
           </div>
 
           {/* Cards grid */}
-          <div
-            style={{
-              position:             'relative',
-              zIndex:               1,
-              display:              'grid',
-              gridTemplateColumns:  'repeat(3, 1fr)',
-              gap:                  1,
-              background:           'rgba(22,101,52,0.15)',
-            }}
-          >
-            {PLANS.map((plan, i) => (
-              <PricingCard key={plan.name} plan={plan} delay={0.28 + i * 0.12} />
-            ))}
-          </div>
+            <div className="relative z-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+              {PLANS.map((plan, i) => (
+                <PricingCard key={plan.name} plan={plan} delay={0.28 + i * 0.12} />
+              ))}
+            </div>
 
           {/* Trial note */}
           <p
