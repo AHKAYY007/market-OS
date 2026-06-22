@@ -93,3 +93,131 @@ body {
 .feature-card:hover .f-line          { background: #ffffff !important; }
 .feature-card:hover .f-title         { color: #ffffff !important; }
 .feature-card:hover .f-desc          { color: rgba(255,255,255,0.7) !important; }
+
+.site-navbar {
+  padding: 0 40px;
+}
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 64px;
+}
+.hero-inner {
+  width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 80px 48px;
+}
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.stats-grid {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.features-grid {
+  position: relative;
+  z-index: 1;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(22,101,52,0.14);
+}
+.cta-section {
+  position: relative;
+  padding: 112px 32px;
+  text-align: center;
+  background: #0c0c0a;
+  background-image: linear-gradient(rgba(22,101,52,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(22,101,52,0.07) 1px, transparent 1px);
+  background-size: 52px 52px;
+}
+.cta-inner {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .hero-inner {
+    padding: 72px 32px !important;
+  }
+
+  .cta-section {
+    padding: 92px 24px !important;
+  }
+
+  .features-grid {
+    max-width: 100%;
+    padding: 0 32px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-navbar {
+    padding: 0 20px !important;
+  }
+
+  .hero-inner {
+    padding: 56px 20px !important;
+  }
+
+  .hero-section {
+    padding-top: 84px !important;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0 20px !important;
+  }
+
+  .feature-card {
+    padding: 28px !important;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0 20px !important;
+  }
+
+  .cta-section {
+    padding: 72px 20px !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .hero-inner {
+    padding: 48px 16px !important;
+  }
+
+  .hero-section {
+    padding-top: 96px !important;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .feature-card {
+    padding: 22px !important;
+  }
+
+  .cta-section {
+    padding: 52px 16px !important;
+  }
+
+  .site-navbar {
+    height: 56px !important;
+  }
+}

@@ -3,6 +3,7 @@ import Link from 'next/link';
 export default function Navbar() {
   return (
     <nav
+      className="site-navbar"
       style={{
         position:       'fixed',
         top:            0,

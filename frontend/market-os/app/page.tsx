@@ -42,8 +42,8 @@ export default function Home() {
         <Navbar />
 
         {/* ── Hero ── */}
-        <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: 64 }}>
-          <div style={{ width: '100%', maxWidth: 1152, margin: '0 auto', padding: '80px 48px' }}>
+        <section className="hero-section" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: 64 }}>
+          <div className="hero-inner" style={{ width: '100%', maxWidth: 1152, margin: '0 auto', padding: '80px 48px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 72, flexWrap: 'wrap' }}>
 
               {/* Left: copy */}
@@ -93,7 +93,7 @@ export default function Home() {
                 </p>
 
                 <div
-                  className="animate-fade-in-up"
+                  className="animate-fade-in-up hero-cta"
                   style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap', animationDelay: '0.34s' }}
                 >
                   <Link
@@ -134,7 +134,7 @@ export default function Home() {
               {/* Right: phone mockup */}
               <div
                 className="animate-slide-right"
-                style={{ flexShrink: 0, animationDelay: '0.18s' }}
+                style={{ flex: '1 1 320px', minWidth: 240, maxWidth: 340, animationDelay: '0.18s' }}
               >
                 <WhatsAppMockup />
               </div>
@@ -144,9 +144,9 @@ export default function Home() {
         </section>
 
         {/* ── Stats ── */}
-        <section style={{ position: 'relative', borderTop: '1px solid rgba(22,101,52,0.12)', borderBottom: '1px solid rgba(22,101,52,0.12)', background: 'rgba(241,236,223,0.7)', backdropFilter: 'blur(8px)' }}>
+        <section className="stats-section" style={{ position: 'relative', borderTop: '1px solid rgba(22,101,52,0.12)', borderBottom: '1px solid rgba(22,101,52,0.12)', background: 'rgba(241,236,223,0.7)', backdropFilter: 'blur(8px)' }}>
           <HologramLines />
-          <div style={{ position: 'relative', zIndex: 1, maxWidth: 960, margin: '0 auto', padding: '0 32px', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
+          <div className="stats-grid" style={{ position: 'relative', zIndex: 1, maxWidth: 960, margin: '0 auto', padding: '0 32px', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
             {STATS.map((s, i) => (
               <div
                 key={i}
@@ -170,9 +170,9 @@ export default function Home() {
         </section>
 
         {/* ── Features ── */}
-        <section style={{ position: 'relative', padding: '112px 0' }}>
+        <section className="features-section" style={{ position: 'relative', padding: '112px 0' }}>
           <HologramLines />
-          <div style={{ position: 'relative', zIndex: 1, maxWidth: 1024, margin: '0 auto', padding: '0 48px' }}>
+          <div className="features-grid" style={{ position: 'relative', zIndex: 1, maxWidth: 1024, margin: '0 auto', padding: '0 48px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: 'rgba(22,101,52,0.14)' }}>
 
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <p className="animate-fade-in-up" style={{ fontSize: 9, fontWeight: 700, letterSpacing: '0.5em', textTransform: 'uppercase', color: 'var(--green)', marginBottom: 20 }}>
@@ -208,13 +208,13 @@ export default function Home() {
         </section>
 
         {/* ── CTA ── */}
-        <section style={{
+        <section className="cta-section" style={{
           position: 'relative', padding: '112px 32px', textAlign: 'center', background: '#0c0c0a',
           backgroundImage: 'linear-gradient(rgba(22,101,52,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(22,101,52,0.07) 1px, transparent 1px)',
           backgroundSize: '52px 52px',
         }}>
           <HologramLines color="#22c55e" opacity={2.5} />
-          <div style={{ position: 'relative', zIndex: 1 }}>
+          <div className="cta-inner" style={{ position: 'relative', zIndex: 1 }}>
           <p className="animate-fade-in-up" style={{ fontSize: 9, fontWeight: 700, letterSpacing: '0.5em', textTransform: 'uppercase', color: 'rgba(22,101,52,0.65)', marginBottom: 24 }}>
             Get Started
           </p>

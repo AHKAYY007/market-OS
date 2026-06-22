@@ -11,13 +11,16 @@ const MESSAGES = [
 ];
 
 const phone: React.CSSProperties = {
-  width:        300,
+  width:        '100%',
+  maxWidth:     300,
+  minWidth:     220,
   borderRadius: 40,
   overflow:     'hidden',
   border:       '7px solid #111',
   background:   '#111',
   boxShadow:    '0 32px 80px rgba(0,0,0,0.35)',
   flexShrink:   0,
+  boxSizing:    'border-box',
 };
 
 const statusBar: React.CSSProperties = {
